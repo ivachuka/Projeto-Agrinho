@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estufa de Morangos - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌱 Agrinho 2026</h1>
+        <p>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
+        <nav>
+            <button onclick="mostrarPagina('simulador')">Simulador de Estufa</button>
+            <button onclick="mostrarPagina('sobre-mim')">Sobre Mim</button>
+            <button onclick="mostrarPagina('sobre-concurso')">Sobre o Concurso</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="simulador" class="pagina ativa">
+            <h2>Simulador de Estufa de Morangos 🍓</h2>
+            <p>Ajuste os controles para encontrar o equilíbrio perfeito! O uso correto dos recursos evita o desperdício e garante uma produção sustentável.</p>
+            
+            <div class="painel-controles">
+                <div class="controle">
+                    <label>Temperatura: <span id="temp-val">20</span>°C</label>
+                    <input type="range" id="temp" min="0" max="45" value="20">
+                </div>
+                <div class="controle">
+                    <label>Umidade do Ar: <span id="umi-ar-val">70</span>%</label>
+                    <input type="range" id="umi-ar" min="0" max="100" value="70">
+                </div>
+                <div class="controle">
+                    <label>Umidade do Solo: <span id="umi-solo-val">80</span>%</label>
+                    <input type="range" id="umi-solo" min="0" max="100" value="80">
+                </div>
+            </div>
+
+            <div class="resultado">
+                <h3>Status da Plantação:</h3>
+                <p id="status-texto">Condições Ideais! Seus morangos estão crescendo fortes e doces.</p>
+                <div id="status-emoji" class="emoji">🍓✨</div>
+            </div>
+        </section>
+
+        <section id="sobre-mim" class="pagina">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou aluno do 1º ano do Ensino Médio.</p>
+            <p>Sempre me interessei por tecnologia e natureza. Criei este projeto para o concurso Agrinho 2026 para mostrar que a agricultura e a sustentabilidade podem andar de mãos dadas.</p>
+            <p>Com sensores e controle em estufas, o agricultor usa apenas a água necessária, protegendo o meio ambiente e colhendo frutos melhores!</p>
+            </section>
+
+        <section id="sobre-concurso" class="pagina">
+            <h2>Sobre o Concurso Agrinho 2026</h2>
+            <p>O tema deste ano nos convida a refletir sobre a importância de produzir alimentos preservando a natureza.</p>
+            <p>É preciso adotar práticas que mantenham o <strong>"Agro Forte"</strong>, mas que também garantam um <strong>"Futuro Sustentável"</strong> para as próximas gerações.</p>
+            
+            <div class="imagem-destaque">
+                <img src="imagem-agrinho.jpg" alt="Imagem do Concurso Agrinho 2026">
+                <p><em>(Lembre-se de colocar a imagem na mesma pasta do site com o nome "imagem-agrinho.jpg")</em></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
